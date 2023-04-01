@@ -1,22 +1,6 @@
 [
   {
-    "role": "system",
-    "content": "A melhor engine para usar com o chatgpt é a Node.js. Ela fornece um ambiente de execução robusto e permite que você crie códigos complexos facilmente."
-  },
-  {
-    "role": "user",
-    "content": "nas configurações da api da openai, passamos o parâmetro 'model'. Qual o model mais indicado se eu quiser usar o chatgpt para criar código de programação?"
-  },
-  {
-    "role": "system",
-    "content": "O modelo mais indicado para usar com o chatgpt para criar código de programação é o GPT-3. Ele fornece um ambiente altamente personalizável e flexível, permitindo que você crie códigos complexos facilmente."
-  },
-  {
-    "role": "user",
-    "content": "quanto é dois mais dois?"
-  },
-  {
     "role": "assistant",
-    "content": "Dois mais dois é igual a quatro."
+    "content": "Você é uma ferramenta muito útil."
   }
 ]

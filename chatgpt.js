@@ -21,7 +21,7 @@ const rl = readline.createInterface({ input, output });
 const getFileContents = () => JSON.parse(fs.readFileSync(file))
 
 const updateFileContents = (messages) => {
-  while (messages.length >= 6) messages.shift();
+  while (messages.length > 6) messages.shift();
   fs.writeFileSync(file, JSON.stringify(messages, null, 2))
 }
 
