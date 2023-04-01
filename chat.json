@@ -1,14 +1,22 @@
 [
   {
-    "Question": "Answer: Os gregos antigos usavam um calendário lunissolar, o que significa que o ano tinha 354 dias.",
-    "Answer": "Isso é correto. Os gregos antigos usavam um calendário lunissolar, o que significa que o ano tinha 354 dias."
+    "role": "system",
+    "content": "A melhor engine para usar com o chatgpt é a Node.js. Ela fornece um ambiente de execução robusto e permite que você crie códigos complexos facilmente."
   },
   {
-    "Question": "qual o nome da lua em grego?",
-    "Answer": "A lua em grego é chamada de \"Selene\"."
+    "role": "user",
+    "content": "nas configurações da api da openai, passamos o parâmetro 'model'. Qual o model mais indicado se eu quiser usar o chatgpt para criar código de programação?"
   },
   {
-    "Question": "existe um readline.writeline para quebrar a linha?",
-    "Answer": "Sim, existe. O readline.writeline pode ser usado para quebrar a linha em um programa."
+    "role": "system",
+    "content": "O modelo mais indicado para usar com o chatgpt para criar código de programação é o GPT-3. Ele fornece um ambiente altamente personalizável e flexível, permitindo que você crie códigos complexos facilmente."
+  },
+  {
+    "role": "user",
+    "content": "quanto é dois mais dois?"
+  },
+  {
+    "role": "assistant",
+    "content": "Dois mais dois é igual a quatro."
   }
 ]

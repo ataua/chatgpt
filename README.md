@@ -28,4 +28,12 @@ Finalmente, registre o local atual do script nas suas configurações globais:
 ```bash
 export PATH="$PATH:$(pwd)"
 ```
-Isso não funcionou para mim. Abri o arquivo `~/.bashrc` com o vim e alterei a variável `PATH` para incluir o endereço que obtive com o comando `pwd` na raiz do projeto.
+Isso não funcionou para mim. Abri o arquivo `~/.bashrc` com o vim e alterei a variável `PATH` para incluir o endereço que obtive com o comando `pwd` na raiz do projeto.  
+Se tudo der certo, agora você pode abrir um terminal em qualquer local do seu filesystem e executar o comando:
+```bash
+chatgpt
+```
+PRONTO! É só curtir!
+
+---
+TODO: deixar no .env opções de outras engines e configurações de temperatura, e criar um prompt para selecionar essas opções ao iniciar o programa (por ex.: para criação de código, usar engine code-davinci-3)
