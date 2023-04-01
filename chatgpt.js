@@ -18,40 +18,33 @@ const openai = new OpenAIApi(configuration);
 
 const rl = readline.createInterface({ input, output });
 
-const getFileContents = (file) => {
-  const content = JSON.parse(fs.readFileSync(file))
-  return content.map(el => `Question: ${ el.Question }\nAnswer: ${ el.Answer }`).join('\n')
-}
+const getFileContents = () => JSON.parse(fs.readFileSync(file))
 
-const updateFileContents = (file, lastChat) => {
-  const content = JSON.parse(fs.readFileSync(file))
-  if (content.length >= 3) content.shift();
-  content.push(lastChat)
-  fs.writeFileSync(file, JSON.stringify(content, null, 2))
+const updateFileContents = (messages) => {
+  while (messages.length >= 6) messages.shift();
+  fs.writeFileSync(file, JSON.stringify(messages, null, 2))
 }
 
 const chat = async () => {
   const question = await rl.question('Question: ')
-  const prompt = getFileContents(file) + '\nQuestion: ' + question
-  const completion = await openai.createCompletion({
-    model: "text-davinci-003",
-    prompt,
-    temperature: 2,
-    max_tokens: 600,
-    n: 1,
-    top_p: 0.5,
-    frequency_penalty: 0.5,
-    presence_penalty: 0.5,
+  const messages = getFileContents()
+  messages.push({ role: 'user', content: question })
+
+  const completion = await openai.createChatCompletion({
+    model: "gpt-3.5-turbo",
+    messages
   });
 
-  const response = completion.data.choices[ 0 ].text.toString()
-  console.log(response);
+  const response = completion.data.choices[ 0 ].message
+  console.log('Answer: ', response.content, '\n');
 
-  updateFileContents(file, { Question: question, Answer: response.toString().substring(9) })
+  messages.push(response)
+  updateFileContents(messages)
 }
 
 async function main () {
-  console.log('Bem-vindo ao ChatGPT. Para sair, digite CTRL+C')
+  console.clear()
+  console.log('Bem-vindo ao ChatGPT. Para sair, digite CTRL+C\n')
   while (true) {
     await chat()
   }

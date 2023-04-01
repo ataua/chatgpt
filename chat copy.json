@@ -1,0 +1,14 @@
+[
+  {
+    "Question": "existe um readline.writeline para quebrar a linha?",
+    "Answer": "Sim, existe. O readline.writeline pode ser usado para quebrar a linha em um programa."
+  },
+  {
+    "Question": "qual a melhor engine para utilizar com o chatgpt para criação de código (por exemplo, em Node)?",
+    "Answer": "A melhor engine para usar com o chatgpt é a Node.js. Ela fornece um ambiente de execução robusto e permite que você crie códigos complexos facilmente."
+  },
+  {
+    "Question": "nas configurações da api da openai, passamos o parâmetro 'model'. Qual o model mais indicado se eu quiser usar o chatgpt para criar código de programação?",
+    "Answer": "O modelo mais indicado para usar com o chatgpt para criar código de programação é o GPT-3. Ele fornece um ambiente altamente personalizável e flexível, permitindo que você crie códigos complexos facilmente."
+  }
+]
