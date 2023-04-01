@@ -1,3 +1,4 @@
+# ChatGPT no terminal do Linux
 ## Rodando Localmente
 
 Abra um terminal na raiz do projeto e execute os seguintes comandos:
