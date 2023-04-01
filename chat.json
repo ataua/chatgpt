@@ -1,0 +1,14 @@
+[
+  {
+    "Question": "Answer: Os gregos antigos usavam um calendário lunissolar, o que significa que o ano tinha 354 dias.",
+    "Answer": "Isso é correto. Os gregos antigos usavam um calendário lunissolar, o que significa que o ano tinha 354 dias."
+  },
+  {
+    "Question": "qual o nome da lua em grego?",
+    "Answer": "A lua em grego é chamada de \"Selene\"."
+  },
+  {
+    "Question": "existe um readline.writeline para quebrar a linha?",
+    "Answer": "Sim, existe. O readline.writeline pode ser usado para quebrar a linha em um programa."
+  }
+]
