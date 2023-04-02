@@ -8,8 +8,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon chatgpt.js",
+    "start": "node chatgpt.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
